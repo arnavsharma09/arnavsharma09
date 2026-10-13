@@ -1,242 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 740" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 175" width="100%" height="100%">
   <defs>
-    <!-- Background & Card Gradients -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#090C12"/>
-      <stop offset="50%" stop-color="#0D121D"/>
+      <stop offset="50%" stop-color="#111726"/>
       <stop offset="100%" stop-color="#090C12"/>
     </linearGradient>
-
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#F8FAFC"/>
-      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="45%" stop-color="#38BDF8"/>
       <stop offset="100%" stop-color="#818CF8"/>
     </linearGradient>
-
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#131A2A" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#0E1420" stop-opacity="0.95"/>
-    </linearGradient>
-
-    <linearGradient id="cyanBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45"/>
       <stop offset="50%" stop-color="#818CF8" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.6"/>
     </linearGradient>
-
     <linearGradient id="bellFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4"/>
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.38"/>
       <stop offset="100%" stop-color="#6366F1" stop-opacity="0.0"/>
     </linearGradient>
-
-    <radialGradient id="topGlow" cx="50%" cy="0%" r="60%">
-      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.18"/>
-      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.06"/>
-      <stop offset="100%" stop-color="#090C12" stop-opacity="0"/>
-    </radialGradient>
-
-    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity="0.05"/>
     </pattern>
-
     <style>
-      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, Helvetica, sans-serif; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, sans-serif; }
       .mono { font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Consolas, monospace; }
-      
-      .hero-name { font-size: 44px; font-weight: 800; letter-spacing: -1px; fill: url(#nameGrad); }
-      .hero-role { font-size: 15.5px; font-weight: 500; fill: #94A3B8; }
-      .hero-desc { font-size: 14px; fill: #64748B; }
-      
-      .card-title { font-size: 18px; font-weight: 700; fill: #F8FAFC; }
-      .card-sub { font-size: 12.5px; font-weight: 500; fill: #94A3B8; }
-      .card-bullet { font-size: 12px; fill: #8E9BAE; }
-      
-      .pill-text { font-size: 11px; font-weight: 600; }
-      .stack-text { font-size: 10.5px; fill: #64748B; }
-      
       @keyframes pulse {
-        0%, 100% { opacity: 1; r: 4.5px; }
-        50% { opacity: 0.45; r: 3.8px; }
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
       }
-      @keyframes floatCurve {
-        0%, 100% { stroke-dashoffset: 0; }
-        50% { stroke-dashoffset: 12; }
-      }
-      .pulse-dot { animation: pulse 2.2s infinite ease-in-out; }
+      .dot { animation: pulse 2s infinite ease-in-out; }
     </style>
   </defs>
 
-  <!-- Outer Canvas -->
-  <rect width="920" height="740" rx="20" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5"/>
-  <rect width="920" height="740" rx="20" fill="url(#dotGrid)"/>
-  <rect width="920" height="740" rx="20" fill="url(#topGlow)"/>
+  <!-- Card Background -->
+  <rect x="2" y="2" width="896" height="171" rx="16" fill="url(#bg)" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  <rect x="2" y="2" width="896" height="171" rx="16" fill="url(#dots)"/>
 
-  <!-- Top Window Bar / Terminal Header -->
-  <rect x="0" y="0" width="920" height="42" rx="20" fill="#0D131F" opacity="0.9"/>
-  <line x1="0" y1="42" x2="920" y2="42" stroke="#1E293B" stroke-width="1"/>
-  <circle cx="24" cy="21" r="5.5" fill="#EF4444" opacity="0.8"/>
-  <circle cx="42" cy="21" r="5.5" fill="#F59E0B" opacity="0.8"/>
-  <circle cx="60" cy="21" r="5.5" fill="#10B981" opacity="0.8"/>
-  <text x="460" y="25" text-anchor="middle" class="mono" font-size="12" fill="#64748B">arnav.sharma() — ~/iit-jodhpur/ml-and-agents</text>
-
-  <!-- ================= HERO SECTION ================= -->
-  <g transform="translate(36, 68)">
+  <!-- Left Content -->
+  <g transform="translate(36, 32)">
     <!-- Status Pill -->
-    <rect x="0" y="0" width="445" height="26" rx="13" fill="#111827" stroke="#1E293B" stroke-width="1"/>
-    <circle cx="15" cy="13" r="4.5" fill="#34D399" class="pulse-dot"/>
-    <text x="28" y="17" class="mono" font-size="11" fill="#94A3B8">B.Tech '28 · IIT Jodhpur · Open to DS / ML / AI Internships</text>
+    <rect x="0" y="0" width="380" height="24" rx="12" fill="#131B2E" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="14" cy="12" r="4" fill="#34D399" class="dot"/>
+    <text x="26" y="16" class="mono" font-size="11" fill="#94A3B8">B.Tech '28 · IIT Jodhpur · Open to DS / ML Internships</text>
 
-    <!-- Main Name & Role -->
-    <text x="0" y="68" class="sans hero-name">Arnav Sharma</text>
-    <text x="0" y="96" class="mono hero-role">
+    <!-- Name -->
+    <text x="0" y="68" class="sans" font-size="40" font-weight="800" letter-spacing="-0.8" fill="url(#titleGrad)">Arnav Sharma</text>
+
+    <!-- Role Subtitle -->
+    <text x="0" y="96" class="mono" font-size="14.5" font-weight="500" fill="#94A3B8">
       Data Science &amp; ML Engineer building <tspan fill="#38BDF8" font-weight="600">Multi-Agent LLMs</tspan> &amp; <tspan fill="#A78BFA" font-weight="600">Statistical Systems</tspan>
     </text>
-    <text x="0" y="122" class="sans hero-desc">
-      I build end-to-end ML pipelines, adversarial red-team harnesses, and self-correcting agentic workflows —
+
+    <!-- Tagline -->
+    <text x="0" y="120" class="sans" font-size="13.5" fill="#64748B">
+      Engineering end-to-end ML pipelines, adversarial red-team harnesses, and verifiable AI workflows
     </text>
-    <text x="0" y="142" class="sans hero-desc">
-      stress-testing models under edge cases with <tspan fill="#E2E8F0">pre-committed statistical tests</tspan>, <tspan fill="#E2E8F0">Wilson CIs</tspan>, and <tspan fill="#E2E8F0">AST sandboxes</tspan>.
-    </text>
-
-    <!-- Right-Side Gaussian Curve Graphic Badge -->
-    <g transform="translate(690, 8)">
-      <rect x="0" y="0" width="154" height="136" rx="16" fill="#0E1525" stroke="url(#cyanBorder)" stroke-width="1.5"/>
-      <path d="M 18 98 C 46 98, 56 28, 77 28 C 98 28, 108 98, 136 98 Z" fill="url(#bellFill)"/>
-      <line x1="55" y1="52" x2="55" y2="98" stroke="#818CF8" stroke-width="1.5" stroke-dasharray="3 3"/>
-      <line x1="99" y1="52" x2="99" y2="98" stroke="#818CF8" stroke-width="1.5" stroke-dasharray="3 3"/>
-      <path d="M 18 98 C 46 98, 56 28, 77 28 C 98 28, 108 98, 136 98" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="77" cy="28" r="4" fill="#F8FAFC"/>
-      <text x="77" y="120" text-anchor="middle" class="mono" font-size="10" fill="#64748B">p &lt; 0.001 · 95% CI</text>
-    </g>
   </g>
 
-  <!-- Divider Line -->
-  <line x1="36" y1="234" x2="884" y2="234" stroke="#1E293B" stroke-width="1"/>
-  <text x="36" y="262" class="mono" font-size="11.5" font-weight="600" fill="#818CF8" letter-spacing="1">01 // FEATURED ARCHITECTURE &amp; SYSTEMS</text>
-
-  <!-- ================= 2x2 BENTO GRID ================= -->
-
-  <!-- CARD 1: Agent Red-Team -->
-  <g transform="translate(36, 278)">
-    <rect width="414" height="205" rx="14" fill="url(#cardGrad)" stroke="url(#cyanBorder)" stroke-width="1.2"/>
-    <text x="20" y="30" class="sans card-title">Agent Red-Team</text>
-    <rect x="312" y="14" width="84" height="22" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.35"/>
-    <text x="354" y="29" text-anchor="middle" class="mono" font-size="10.5" fill="#38BDF8">191 Tests ✓</text>
-
-    <text x="20" y="50" class="sans card-sub">Adaptive UCB1 Red-Team Harness for LLM Agents</text>
-
-    <!-- Metric Pills -->
-    <g transform="translate(20, 62)">
-      <rect x="0" y="0" width="112" height="22" rx="5" fill="#1E1B4B" stroke="#6366F1" stroke-opacity="0.4"/>
-      <text x="56" y="15" text-anchor="middle" class="mono pill-text" fill="#A5B4FC">144 Attack Recipes</text>
-
-      <rect x="120" y="0" width="145" height="22" rx="5" fill="#064E3B" stroke="#10B981" stroke-opacity="0.4"/>
-      <text x="192.5" y="15" text-anchor="middle" class="mono pill-text" fill="#6EE7B7">61/350 → 0/250 Exfil</text>
-
-      <rect x="273" y="0" width="102" height="22" rx="5" fill="#0C4A6E" stroke="#38BDF8" stroke-opacity="0.4"/>
-      <text x="324" y="15" text-anchor="middle" class="mono pill-text" fill="#7DD3FC">0/36 False Pos</text>
-    </g>
-
-    <!-- Bullet Points -->
-    <text x="20" y="108" class="sans card-bullet">• Argument-provenance taint guardrail cut exfiltration to <tspan fill="#F8FAFC" font-weight="600">0/250</tspan> episodes</text>
-    <text x="28" y="125" class="sans card-bullet">vs 61/350 undefended (Wilson 95% UB: 9.6%; 35/36 benign completion).</text>
-    <text x="20" y="146" class="sans card-bullet">• Exposed &amp; patched file-trust gap (15/31 exec) and base64 self-decoding</text>
-    <text x="28" y="163" class="sans card-bullet">bypass (<tspan fill="#F8FAFC" font-weight="600">0/100</tspan> executions after).</text>
-
-    <line x1="20" y1="176" x2="394" y2="176" stroke="#1E293B" stroke-width="1"/>
-    <text x="20" y="193" class="mono stack-text">Python · Ollama (Qwen2.5-7B) · UCB1 Bandit · Wilson CIs · pytest</text>
-  </g>
-
-  <!-- CARD 2: AutoInsight -->
-  <g transform="translate(470, 278)">
-    <rect width="414" height="205" rx="14" fill="url(#cardGrad)" stroke="url(#cyanBorder)" stroke-width="1.2"/>
-    <text x="20" y="30" class="sans card-title">AutoInsight</text>
-    <rect x="300" y="14" width="96" height="22" rx="6" fill="#0F172A" stroke="#34D399" stroke-opacity="0.35"/>
-    <text x="348" y="29" text-anchor="middle" class="mono" font-size="10.5" fill="#34D399">18/18 DeepEval</text>
-
-    <text x="20" y="50" class="sans card-sub">7-Node Multi-Agent Autonomous Statistical Pipeline</text>
-
-    <!-- Metric Pills -->
-    <g transform="translate(20, 62)">
-      <rect x="0" y="0" width="118" height="22" rx="5" fill="#0C4A6E" stroke="#38BDF8" stroke-opacity="0.4"/>
-      <text x="59" y="15" text-anchor="middle" class="mono pill-text" fill="#7DD3FC">60+ Stat Tests</text>
-
-      <rect x="126" y="0" width="126" height="22" rx="5" fill="#1E1B4B" stroke="#6366F1" stroke-opacity="0.4"/>
-      <text x="189" y="15" text-anchor="middle" class="mono pill-text" fill="#A5B4FC">AST Code Sandbox</text>
-
-      <rect x="260" y="0" width="114" height="22" rx="5" fill="#064E3B" stroke="#10B981" stroke-opacity="0.4"/>
-      <text x="317" y="15" text-anchor="middle" class="mono pill-text" fill="#6EE7B7">Self-Healing Critic</text>
-    </g>
-
-    <!-- Bullet Points -->
-    <text x="20" y="108" class="sans card-bullet">• <tspan class="mono" fill="#E2E8F0" font-size="11">Profiler → Router → Planner → [Gate] → Sandbox → Critic</tspan></text>
-    <text x="28" y="125" class="sans card-bullet">multi-agent workflow with human-in-the-loop approval checkpoint.</text>
-    <text x="20" y="146" class="sans card-bullet">• Critic auto-switches tests when assumptions fail (<tspan fill="#F8FAFC" font-weight="600">ANOVA → Kruskal-Wallis</tspan></text>
-    <text x="28" y="163" class="sans card-bullet">on Shapiro-Wilk rejection) &amp; verifies report claims against hallucinations.</text>
-
-    <line x1="20" y1="176" x2="394" y2="176" stroke="#1E293B" stroke-width="1"/>
-    <text x="20" y="193" class="mono stack-text">LangGraph · Polars · ChromaDB · Claude API · FastAPI · Docker</text>
-  </g>
-
-  <!-- CARD 3: RetainIQ -->
-  <g transform="translate(36, 502)">
-    <rect width="414" height="205" rx="14" fill="url(#cardGrad)" stroke="url(#cyanBorder)" stroke-width="1.2"/>
-    <text x="20" y="30" class="sans card-title">RetainIQ</text>
-    <rect x="304" y="14" width="92" height="22" rx="6" fill="#0F172A" stroke="#818CF8" stroke-opacity="0.35"/>
-    <text x="350" y="29" text-anchor="middle" class="mono" font-size="10.5" fill="#A5B4FC">99.4K Orders</text>
-
-    <text x="20" y="50" class="sans card-sub">End-to-End Customer Retention &amp; RFM Star Schema</text>
-
-    <!-- Metric Pills -->
-    <g transform="translate(20, 62)">
-      <rect x="0" y="0" width="152" height="22" rx="5" fill="#1E1B4B" stroke="#6366F1" stroke-opacity="0.4"/>
-      <text x="76" y="15" text-anchor="middle" class="mono pill-text" fill="#A5B4FC">4.31 vs 3.75 (p&lt;0.001)</text>
-
-      <rect x="160" y="0" width="112" height="22" rx="5" fill="#064E3B" stroke="#10B981" stroke-opacity="0.4"/>
-      <text x="216" y="15" text-anchor="middle" class="mono pill-text" fill="#6EE7B7">3.04% Repeat</text>
-
-      <rect x="280" y="0" width="94" height="22" rx="5" fill="#0C4A6E" stroke="#38BDF8" stroke-opacity="0.4"/>
-      <text x="327" y="15" text-anchor="middle" class="mono pill-text" fill="#7DD3FC">7 RFM Tiers</text>
-    </g>
-
-    <!-- Bullet Points -->
-    <text x="20" y="108" class="sans card-bullet">• Modeled 99,441 e-commerce orders across 9 relational tables into a</text>
-    <text x="28" y="125" class="sans card-bullet"><tspan fill="#F8FAFC" font-weight="600">PostgreSQL star schema</tspan>, scoring ~95K customers via quintile RFM.</text>
-    <text x="20" y="146" class="sans card-bullet">• Pre-committed <tspan fill="#F8FAFC" font-weight="600">Mann-Whitney U test</tspan> isolated delivery delay's impact</text>
-    <text x="28" y="163" class="sans card-bullet">independent of distance; shipped 6-visual Power BI dashboard.</text>
-
-    <line x1="20" y1="176" x2="394" y2="176" stroke="#1E293B" stroke-width="1"/>
-    <text x="20" y="193" class="mono stack-text">PostgreSQL · SQL · Python (scipy, statsmodels) · Power BI · Docker</text>
-  </g>
-
-  <!-- CARD 4: Credit Risk Prediction -->
-  <g transform="translate(470, 502)">
-    <rect width="414" height="205" rx="14" fill="url(#cardGrad)" stroke="url(#cyanBorder)" stroke-width="1.2"/>
-    <text x="20" y="30" class="sans card-title">Credit Risk Prediction</text>
-    <rect x="304" y="14" width="92" height="22" rx="6" fill="#064E3B" stroke="#34D399" stroke-opacity="0.45"/>
-    <text x="350" y="29" text-anchor="middle" class="mono" font-size="10.5" fill="#6EE7B7">● Live App ↗</text>
-
-    <text x="20" y="50" class="sans card-sub">Explainable Default Scoring Pipeline on 150K+ Records</text>
-
-    <!-- Metric Pills -->
-    <g transform="translate(20, 62)">
-      <rect x="0" y="0" width="124" height="22" rx="5" fill="#064E3B" stroke="#10B981" stroke-opacity="0.4"/>
-      <text x="62" y="15" text-anchor="middle" class="mono pill-text" fill="#6EE7B7">RF: 0.8588 AUC</text>
-
-      <rect x="132" y="0" width="128" height="22" rx="5" fill="#0C4A6E" stroke="#38BDF8" stroke-opacity="0.4"/>
-      <text x="196" y="15" text-anchor="middle" class="mono pill-text" fill="#7DD3FC">XGB: 0.8492 AUC</text>
-
-      <rect x="268" y="0" width="106" height="22" rx="5" fill="#1E1B4B" stroke="#6366F1" stroke-opacity="0.4"/>
-      <text x="321" y="15" text-anchor="middle" class="mono pill-text" fill="#A5B4FC">SHAP + SMOTE</text>
-    </g>
-
-    <!-- Bullet Points -->
-    <text x="20" y="108" class="sans card-bullet">• Corrected severe class imbalance (<tspan fill="#F8FAFC" font-weight="600">93.7%</tspan>) using fold-isolated SMOTE</text>
-    <text x="28" y="125" class="sans card-bullet">inside stratified cross-validation across 150,000+ borrower records.</text>
-    <text x="20" y="146" class="sans card-bullet">• Integrated <tspan fill="#F8FAFC" font-weight="600">SHAP tree explainers</tspan> to surface per-applicant risk drivers</text>
-    <text x="28" y="163" class="sans card-bullet">in a real-time interactive Streamlit scoring web application.</text>
-
-    <line x1="20" y1="176" x2="394" y2="176" stroke="#1E293B" stroke-width="1"/>
-    <text x="20" y="193" class="mono stack-text">Python · Scikit-learn · XGBoost · SHAP · SMOTE · Streamlit</text>
+  <!-- Right Gaussian Bell Curve Emblem -->
+  <g transform="translate(730, 24)">
+    <rect x="0" y="0" width="132" height="126" rx="14" fill="#0D1322" stroke="url(#borderGrad)" stroke-width="1.2"/>
+    <path d="M 16 92 C 40 92, 48 26, 66 26 C 84 26, 92 92, 116 92 Z" fill="url(#bellFill)"/>
+    <line x1="47" y1="48" x2="47" y2="92" stroke="#818CF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <line x1="85" y1="48" x2="85" y2="92" stroke="#818CF8" stroke-width="1.5" stroke-dasharray="3 3"/>
+    <path d="M 16 92 C 40 92, 48 26, 66 26 C 84 26, 92 92, 116 92" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="66" cy="26" r="3.5" fill="#F8FAFC"/>
+    <text x="66" y="112" text-anchor="middle" class="mono" font-size="10" fill="#64748B">arnav.sharma()</text>
   </g>
 </svg>
