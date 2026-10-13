@@ -1,6 +1,7 @@
 <div align="center">
 
-# Arnav Sharma
+<img src="https://capsule-render.vercel.app/api?type=transparent&height=95&text=Arnav%20Sharma&fontSize=56&fontColor=F8FAFC&fontAlignY=62" alt="Arnav Sharma" />
+
 **Data Science & ML Engineer · Multi-Agent LLMs · Statistical Systems**  
 <sub>B.Tech in Mechanical Engineering '28 @ <b>IIT Jodhpur</b> · Delhi, India</sub>
 
@@ -30,7 +31,7 @@ class ArnavSharma:
 > #### 🛡️ [Agent Red-Team](https://github.com/arnavsharma09/agent-redteam) — *Adaptive UCB1 Red-Team Harness for LLM Agents*
 > `Python` · `Ollama (Qwen2.5-7B)` · `UCB1 Bandit` · `Wilson CIs` · `pytest`
 > - **Adversarial Search & Taint Guardrail:** UCB1 bandit searches **144 prompt-injection recipes** against local Qwen2.5-7B. An argument-provenance taint guardrail cut exfiltration from **61/350 → 0/250 episodes**, with **0/36** benign tasks blocked (Wilson 95% UB: 9.6%) and 35/36 task completion.
-> - ** Iterative Defense Hardening:** Exposed a gap in my own defense (file reads were trusted; 15/31 exec episodes got through), patched it, and closed a base64 self-decoding bypass (**0/100 executions after**). Backed by **191 passing unit tests**.
+> - **Iterative Defense Hardening:** Exposed a gap in my own defense (file reads were trusted; 15/31 exec episodes got through), patched it, and closed a base64 self-decoding bypass (**0/100 executions after**). Backed by **191 passing unit tests**.
 
 > #### 🧠 [AutoInsight](https://github.com/arnavsharma09/AutoInsight) — *7-Node Multi-Agent Autonomous Statistical Pipeline*
 > `LangGraph` · `Polars` · `ChromaDB` · `Anthropic Claude API` · `FastAPI` · `Streamlit` · `Docker`
