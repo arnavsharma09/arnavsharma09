@@ -1,68 +1,120 @@
-<div align="left">
+<div align="center">
 
-# Arnav Sharma
-**Data Science & ML Engineer building `Multi-Agent LLMs` & `Statistical Systems`**  
-*B.Tech in Mechanical Engineering '28 · Indian Institute of Technology (IIT), Jodhpur*
+<!-- Dynamic Gradient Wave Banner -->
+<img src="https://capsule-render.vercel.app/api?type=venom&height=200&color=0:090C12,50:1E1B4B,100:0284C7&text=Arnav%20Sharma&fontSize=54&fontColor=F8FAFC&fontAlignY=42&desc=Multi-Agent%20LLMs%20%C2%B7%20Adversarial%20AI%20%C2%B7%20Statistical%20ML&descSize=18&descColor=38BDF8&descAlignY=68&stroke=38BDF8&strokeWidth=1" width="100%" alt="Arnav Sharma Banner" />
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-arnavsharma09.github.io-38BDF8?style=flat-square&logo=googlechrome&logoColor=white)](https://arnavsharma09.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-arnav--sharma09-818CF8?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/arnav-sharma09)
-[![Email](https://img.shields.io/badge/Email-arnavsharma090406%40gmail.com-34D399?style=flat-square&logo=gmail&logoColor=white)](mailto:arnavsharma090406@gmail.com)
+<!-- Animated Typing Subtitle -->
+<a href="https://arnavsharma09.github.io">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=750&lines=B.Tech+'28+%40+IIT+Jodhpur+%7C+Machine+Learning+%26+Data+Science;Building+7-Node+LangGraph+Agents+%26+144-Recipe+Red-Team+Harnesses;Pre-Committed+Hypothesis+Tests+%C2%B7+Wilson+CIs+%C2%B7+AST+Sandboxes" alt="Typing SVG" />
+</a>
+
+<br/>
+
+<!-- Bold For-The-Badge Social Pills -->
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-arnavsharma09.github.io-0EA5E9?style=for-the-badge&logo=safari&logoColor=white&labelColor=0F172A)](https://arnavsharma09.github.io)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-arnav--sharma09-6366F1?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0F172A)](https://linkedin.com/in/arnav-sharma09)
+[![Email](https://img.shields.io/badge/EMAIL-arnavsharma090406%40gmail.com-10B981?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0F172A)](mailto:arnavsharma090406@gmail.com)
 
 </div>
 
----
+<br/>
 
-### About Me
+```yaml
+name: Arnav Sharma
+education: B.Tech in Mechanical Engineering @ IIT Jodhpur (2024–2028)
+focus: [Multi-Agent LLM Systems, Adversarial AI Security, Classical ML & Statistical Inference]
+currently_exploring: [LLM Guardrail Design, Deep Learning Architectures, Open-Source Data Tools (Polars / Streamlit)]
+engineering_standard: "Stress-test models under edge cases, pre-commit statistical tests, never hide error bars."
+```
 
-- 🎓 Undergraduate at **IIT Jodhpur** focused on building reliable machine learning pipelines and production-grade AI systems.
-- 🧠 Working across **classical ML**, **multi-agent LLM workflows**, **statistical inference**, and **adversarial AI security**.
-- 🔬 Currently exploring **LLM guardrails & red-teaming** and **deep learning architectures**, while contributing to **open-source Python data tools**.
-- ⚡ I build from first principles—stress-testing models under edge cases, pre-committing statistical tests, and designing systems that stay interpretable.
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
----
+### ⚡ Featured Systems (2×2 Bento Grid)
 
-### Featured Systems & Projects
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="left">🛡️ <a href="https://github.com/arnavsharma09/agent-redteam">Agent Red-Team</a></h3>
+      <p><b>Adaptive Red-Team Harness for Tool-Calling LLM Agents</b></p>
+      <p>
+        <img src="https://img.shields.io/badge/144_Recipes-UCB1_Bandit-6366F1?style=flat-square&labelColor=0F172A" />
+        <img src="https://img.shields.io/badge/Exfiltration-61%2F350_%E2%86%92_0%2F250-10B981?style=flat-square&labelColor=0F172A" />
+        <img src="https://img.shields.io/badge/Tests-191_Passing-0EA5E9?style=flat-square&labelColor=0F172A" />
+      </p>
+      <ul>
+        <li>An argument-provenance taint guardrail cut exfiltration to 0/250 episodes versus 61/350 undefended, with 0/36 benign tasks blocked (Wilson 95% upper bound 9.6%) and 35/36 task completion.</li>
+        <li>The attacker also exposed a gap in my own defense (file reads were trusted, and 15/31 exec episodes got through), which I fixed, then closed a base64 self-decoding bypass (0/100 executions after). 191 unit tests, limits documented.</li>
+      </ul>
+      <p><code>Python</code> · <code>Ollama (Qwen2.5-7B)</code> · <code>UCB1 Bandit</code> · <code>Wilson CIs</code> · <code>pytest</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="left">🧠 <a href="https://github.com/arnavsharma09/AutoInsight">AutoInsight</a></h3>
+      <p><b>7-Node Multi-Agent Autonomous Statistical Pipeline</b></p>
+      <p>
+        <img src="https://img.shields.io/badge/DeepEval-18%2F18_Passing-10B981?style=flat-square&labelColor=0F172A" />
+        <img src="https://img.shields.io/badge/Router-60%2B_Stat_Tests-0EA5E9?style=flat-square&labelColor=0F172A" />
+        <img src="https://img.shields.io/badge/Sandbox-AST_Verified-6366F1?style=flat-square&labelColor=0F172A" />
+      </p>
+      <ul>
+        <li><code>Profiler → Router → Planner → [Human Gate] → Sandbox → Critic → Reporter</code> workflow with human-in-the-loop approval.</li>
+        <li>Critic loop auto-corrects methodology when normality fails (e.g., switching <b>ANOVA → Kruskal-Wallis</b> upon Shapiro-Wilk rejection) and audits claims against computed metrics.</li>
+      </ul>
+      <p><code>LangGraph</code> · <code>Polars</code> · <code>ChromaDB</code> · <code>Claude API</code> · <code>FastAPI</code> · <code>Docker</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="left">📊 <a href="https://github.com/arnavsharma09/RetainIQ">RetainIQ</a></h3>
+      <p><b>End-to-End Customer Retention &amp; RFM Analytics Pipeline</b></p>
+      <p>
+        <img src="https://img.shields.io/badge/Scale-99.4K_Orders-0EA5E9?style=flat-square&labelColor=0F172A" />
+        <img src="https://img.shields.io/badge/Rating_Drop-4.31_vs_3.75_(p%3C0.001)-6366F1?style=flat-square&labelColor=0F172A" />
+        <img src="https://img.shields.io/badge/Repeat_Rate-3.04%25-10B981?style=flat-square&labelColor=0F172A" />
+      </p>
+      <ul>
+        <li>Modeled 99,441 orders across 9 relational tables into a <b>PostgreSQL star schema</b>, segmenting ~95K customers into 7 RFM tiers.</li>
+        <li>Isolated delivery delay's impact on satisfaction independent of distance via pre-committed <b>Mann-Whitney U testing</b>; shipped a 6-visual Power BI dashboard.</li>
+      </ul>
+      <p><code>PostgreSQL</code> · <code>SQL</code> · <code>Python (scipy, statsmodels)</code> · <code>Power BI</code> · <code>Docker</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="left">💳 <a href="https://github.com/arnavsharma09/credit-risk-prediction">Credit Risk Prediction</a></h3>
+      <p><b>Explainable Default Scoring System · <a href="https://arnavsharma-credit-risk.streamlit.app">Live Streamlit App ↗</a></b></p>
+      <p>
+        <img src="https://img.shields.io/badge/RF_AUC--ROC-0.8588-10B981?style=flat-square&labelColor=0F172A" />
+        <img src="https://img.shields.io/badge/XGB_AUC--ROC-0.8492-0EA5E9?style=flat-square&labelColor=0F172A" />
+        <img src="https://img.shields.io/badge/Dataset-150K%2B_Records-6366F1?style=flat-square&labelColor=0F172A" />
+      </p>
+      <ul>
+        <li>Trained on 150K+ borrower records with severe class imbalance (93.7%), applying fold-isolated <b>SMOTE</b> inside stratified cross-validation.</li>
+        <li>Integrated <b>SHAP tree explainers</b> to surface per-applicant risk drivers in a real-time scoring web app.</li>
+      </ul>
+      <p><code>Python</code> · <code>Scikit-learn</code> · <code>XGBoost</code> · <code>SHAP</code> · <code>SMOTE</code> · <code>Streamlit</code></p>
+    </td>
+  </tr>
+</table>
 
-| System | Architecture & Stack | Key Engineering & Statistical Results | Links |
-| :--- | :--- | :--- | :---: |
-| **[Agent Red-Team](https://github.com/arnavsharma09/agent-redteam)**<br>*Adaptive LLM Red-Team Harness* | `Python` `Ollama (Qwen2.5-7B)` `UCB1 Bandit` `Wilson CIs` `pytest` | • UCB1 bandit searches **144 prompt-injection recipes** (17.4% exfiltration & 37.0% destructive undefended over 350 episodes)<br>• Argument-provenance taint guardrail cut exfiltration from **61/350 → 0/250** with **0/36** benign task blocks (Wilson 95% UB: 9.6%)<br>• Closed file-trust & base64 self-decoding bypasses (**0/100** executions after); **191 passing unit tests** | [Repo ↗](https://github.com/arnavsharma09/agent-redteam) |
-| **[AutoInsight](https://github.com/arnavsharma09/AutoInsight)**<br>*7-Node Multi-Agent Statistical Pipeline* | `LangGraph` `Polars` `ChromaDB` `Claude API` `FastAPI` `Streamlit` `Docker` | • Autonomous `Profiler → Router → Planner → [Human Gate] → Sandbox → Critic → Reporter` workflow<br>• Hybrid rule + semantic router indexes **60+ statistical tests**; Critic loop auto-switches methodology when normality fails (e.g., ANOVA → Kruskal-Wallis)<br>• AST-scanned sandbox + **18/18 passing DeepEval faithfulness tests** | [Repo ↗](https://github.com/arnavsharma09/AutoInsight) |
-| **[RetainIQ](https://github.com/arnavsharma09/RetainIQ)**<br>*Customer Retention & RFM Pipeline* | `PostgreSQL` `SQL` `scipy` `statsmodels` `Power BI` `Docker` | • Modeled **99,441 orders** across 9 relational tables into a PostgreSQL star schema with quintile RFM segmentation across **~95K customers**<br>• Pre-committed **Mann-Whitney U test** (after Shapiro-Wilk rejection) isolated delivery delay impact (**4.31 vs 3.75 rating, p < 0.001**)<br>• Uncovered **3.04% repeat rate** and **62.5% revenue concentration** in 3/27 states | [Repo ↗](https://github.com/arnavsharma09/RetainIQ) |
-| **[Credit Risk Prediction](https://github.com/arnavsharma09/credit-risk-prediction)**<br>*Explainable Default Scoring System* | `Python` `Scikit-learn` `XGBoost` `SHAP` `SMOTE` `Streamlit` | • Trained on **150K+ borrower records** with severe class imbalance (93.7%), applying fold-isolated SMOTE during cross-validation<br>• Benchmarked Random Forest (**0.8588 AUC-ROC**), XGBoost (**0.8492**), and Logistic Regression (**0.8234**)<br>• Deployed real-time **SHAP explainability** scoring dashboard | [Live App ↗](https://arnavsharma-credit-risk.streamlit.app)<br>[Repo ↗](https://github.com/arnavsharma09/credit-risk-prediction) |
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
----
+### 🛠️ Technical Arsenal
 
-### Technical Arsenal
+<div align="center">
 
-**LLM & Multi-Agent Systems**  
-![LangGraph](https://img.shields.io/badge/LangGraph-111622?style=flat-square&logo=langchain&logoColor=38BDF8)
-![LangChain](https://img.shields.io/badge/LangChain-111622?style=flat-square&logo=langchain&logoColor=818CF8)
-![Anthropic Claude](https://img.shields.io/badge/Anthropic_Claude_API-111622?style=flat-square&logo=anthropic&logoColor=F8FAFC)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-111622?style=flat-square&logoColor=38BDF8)
-![Ollama](https://img.shields.io/badge/Ollama-111622?style=flat-square&logo=ollama&logoColor=F8FAFC)
-![DeepEval](https://img.shields.io/badge/DeepEval-111622?style=flat-square&logoColor=34D399)
-![AI Security](https://img.shields.io/badge/LLM_Red--Teaming_%26_Guardrails-111622?style=flat-square&logoColor=38BDF8)
-![MCP](https://img.shields.io/badge/Model_Context_Protocol_(MCP)-111622?style=flat-square&logoColor=818CF8)
+<!-- Vivid 3D App Icons via SkillIcons -->
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,cpp,c,postgres,pytorch,tensorflow,sklearn,fastapi,docker,git,linux&perline=11" alt="Core Tech Stack" />
+</p>
 
-**Machine Learning & Deep Learning**  
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-111622?style=flat-square&logo=scikitlearn&logoColor=F7931E)
-![XGBoost](https://img.shields.io/badge/XGBoost-111622?style=flat-square&logoColor=38BDF8)
-![PyTorch](https://img.shields.io/badge/PyTorch-111622?style=flat-square&logo=pytorch&logoColor=EE4C2C)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-111622?style=flat-square&logo=tensorflow&logoColor=FF6F00)
-![Optuna](https://img.shields.io/badge/Optuna-111622?style=flat-square&logoColor=818CF8)
-![SHAP](https://img.shields.io/badge/SHAP_%26_SMOTE-111622?style=flat-square&logoColor=34D399)
-![UCB1 Bandits](https://img.shields.io/badge/Multi--Armed_Bandits_(UCB1)-111622?style=flat-square&logoColor=38BDF8)
+<!-- Specialized AI / Data Science Stack Pills -->
+<p align="center">
+  <img src="https://img.shields.io/badge/LangGraph_%26_LangChain-0EA5E9?style=for-the-badge&logo=langchain&logoColor=white&labelColor=0F172A" />
+  <img src="https://img.shields.io/badge/Anthropic_Claude_API-6366F1?style=for-the-badge&logo=anthropic&logoColor=white&labelColor=0F172A" />
+  <img src="https://img.shields.io/badge/Ollama_%26_Local_LLMs-10B981?style=for-the-badge&logo=ollama&logoColor=white&labelColor=0F172A" />
+  <img src="https://img.shields.io/badge/Polars_%26_Pandas-0EA5E9?style=for-the-badge&logo=polars&logoColor=white&labelColor=0F172A" />
+  <img src="https://img.shields.io/badge/XGBoost_%26_SHAP-6366F1?style=for-the-badge&labelColor=0F172A" />
+  <img src="https://img.shields.io/badge/ChromaDB_%26_RAG-10B981?style=for-the-badge&labelColor=0F172A" />
+  <img src="https://img.shields.io/badge/DeepEval_%26_pytest-0EA5E9?style=for-the-badge&logo=pytest&logoColor=white&labelColor=0F172A" />
+  <img src="https://img.shields.io/badge/Streamlit_%26_Power_BI-6366F1?style=for-the-badge&logo=streamlit&logoColor=white&labelColor=0F172A" />
+</p>
 
-**Data Engineering, Statistics & MLOps**  
-![Python](https://img.shields.io/badge/Python-111622?style=flat-square&logo=python&logoColor=38BDF8)
-![SQL](https://img.shields.io/badge/PostgreSQL_%26_SQL-111622?style=flat-square&logo=postgresql&logoColor=818CF8)
-![C++](https://img.shields.io/badge/C_%2F_C++-111622?style=flat-square&logo=cplusplus&logoColor=00599C)
-![Polars](https://img.shields.io/badge/Polars-111622?style=flat-square&logo=polars&logoColor=CD792C)
-![Pandas](https://img.shields.io/badge/Pandas_%26_NumPy-111622?style=flat-square&logo=pandas&logoColor=F8FAFC)
-![SciPy](https://img.shields.io/badge/scipy_%26_statsmodels-111622?style=flat-square&logo=scipy&logoColor=38BDF8)
-![FastAPI](https://img.shields.io/badge/FastAPI-111622?style=flat-square&logo=fastapi&logoColor=009688)
-![Streamlit](https://img.shields.io/badge/Streamlit-111622?style=flat-square&logo=streamlit&logoColor=FF4B4B)
-![Docker](https://img.shields.io/badge/Docker-111622?style=flat-square&logo=docker&logoColor=2496ED)
-![MLflow](https://img.shields.io/badge/MLflow-111622?style=flat-square&logo=mlflow&logoColor=0194E2)
-![Power BI](https://img.shields.io/badge/Power_BI-111622?style=flat-square&logo=powerbi&logoColor=F2C811)
-![pytest](https://img.shields.io/badge/pytest-111622?style=flat-square&logo=pytest&logoColor=0A9EDC)
+</div>
